@@ -334,7 +334,8 @@ def main(args):
     tiler.set_property("width", TILED_OUTPUT_WIDTH)
     tiler.set_property("height", TILED_OUTPUT_HEIGHT)
 
-    sink.set_property("qos",0)
+    sink.set_property("qos", 0)
+    sink.set_property("sync", 0)
 
     print("Adding elements to Pipeline \n")
     pipeline.add(pgie)
